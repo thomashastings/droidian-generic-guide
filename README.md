@@ -53,8 +53,12 @@ In order to streamline the instructions, a generic installation guide is provide
 - Install adaptation package as a flashable zip (TWRP)
     - If the device page provides a file specified as `Adaptation zip`, install it now
 - Boot your device
+    - Go to the `Reboot` menu and choose `System`
+    - TWRP might complain that there is no OS installed, but that's fine
+    - The first boot may take longer, and at least one spontaneous reboot is expected during the process
     - You should be greeted with the lock screen, the default password is `1234`
 - Run a specific command after first boot (Droidian)
     - If the device page specifies a `Command` you need to run, open the `King's Cross` application, and type in the command
     
 Congratulations, if everything went well, now you should be running Droidian.
+Flashing the `devtools` zip enabled `SSH` over USB. To use it, connect your phone to your computer and type `ssh droidian@10.15.19.82`, the password is `1234` (on Windows, you may need [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/))
